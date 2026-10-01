@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: wave-lab-app
-          image: acrwavelabdev.azurecr.io/wave-lab-app:3
+          image: acrwavelabdev.azurecr.io/wave-lab-app:8
           ports:
             - containerPort: 80
