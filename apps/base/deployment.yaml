@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wave-lab-app
+  labels:
+    app: wave-lab-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wave-lab-app
+  template:
+    metadata:
+      labels:
+        app: wave-lab-app
+    spec:
+      containers:
+        - name: wave-lab-app
+          image: nginx:1.27-alpine
+          ports:
+            - containerPort: 80
