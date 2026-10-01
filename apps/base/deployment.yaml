@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: wave-lab-app
-          image: nginx:1.27-alpine
+          image: acrwavelabdev.azurecr.io/wave-lab-app:3
           ports:
             - containerPort: 80
